@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         starsView.setStarsWidthAndHeight(this, 27, 27);
         //设置单个星星的padding
         starsView.setPadding(8, 8, 8, 8);
+        //监听方法
         starsView.setOnMyItemClickListener((view, position) -> {
             starsView.setmStarsNum(position + 1, allStarsNum);//设置黄色星星和灰色星星数量
             Toast.makeText(MainActivity.this, Integer.toString(position), Toast.LENGTH_SHORT).show();
