@@ -1,3 +1,4 @@
+# 评价星星自定义view
 # 依赖方式
 	allprojects {
 		repositories {
