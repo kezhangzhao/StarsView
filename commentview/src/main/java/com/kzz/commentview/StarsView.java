@@ -101,7 +101,7 @@ public class StarsView extends LinearLayout {
     }
 
     /**
-     * 设置单个星星的宽度和高度(单位转换为了sp)
+     * 设置单个星星的宽度和高度(单位转换为了px)
      *
      * @param width  宽(dp)
      * @param height 高(dp)
