@@ -8,6 +8,13 @@
         android:id="@+id/stars_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true" />
 
+
+    <com.kzz.commentview.FloatStarsView
+        android:id="@+id/float_stars_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stars_view"
+        android:layout_centerInParent="true" />
 </RelativeLayout>

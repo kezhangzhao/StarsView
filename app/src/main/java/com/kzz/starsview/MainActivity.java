@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.kzz.commentview.FloatStarsView;
 import com.kzz.commentview.StarsView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,19 @@ public class MainActivity extends AppCompatActivity {
         //监听方法
         starsView.setOnMyItemClickListener((view, position) -> {
             starsView.setmStarsNum(position + 1, allStarsNum);//设置黄色星星和灰色星星数量
+            Toast.makeText(MainActivity.this, Integer.toString(position), Toast.LENGTH_SHORT).show();
+        });
+
+        FloatStarsView floatstarsView = findViewById(R.id.float_stars_view);
+        //设置星星数量
+        floatstarsView.setmStarsNum(2.8f, allStarsNum);
+        //设置单个星星的宽高
+        floatstarsView.setStarsWidthAndHeight(this, 27, 27);
+        //设置单个星星的padding
+        floatstarsView.setPadding(8, 8, 8, 8);
+        //监听方法
+        floatstarsView.setOnMyItemClickListener((view, position) -> {
+            floatstarsView.setmStarsNum(position + 1, allStarsNum);//设置黄色星星和灰色星星数量
             Toast.makeText(MainActivity.this, Integer.toString(position), Toast.LENGTH_SHORT).show();
         });
     }
