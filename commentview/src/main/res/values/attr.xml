@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StarsView">
+        <attr name="star_width" format="dimension" />
+        <attr name="star_height" format="dimension" />
+        <attr name="star_padding" format="dimension"/>
+        <attr name="star_gray" format="reference|color"/>
+        <attr name="star_yellow" format="reference|color"/>
+        <attr name="star_gray_num" format="integer"/>
+        <attr name="star_yellow_num" format="integer"/>
+    </declare-styleable>
+
+</resources>
