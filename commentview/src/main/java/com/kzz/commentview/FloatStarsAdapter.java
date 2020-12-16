@@ -18,8 +18,8 @@ public class FloatStarsAdapter extends RecyclerView.Adapter<FloatStarsAdapter.My
     private float yellowNum = 0;
     private int grayNum = 5;
     private ArrayList<Integer> listData = new ArrayList<>();
-    private int mStarsHeight = 0;//星星的高度
-    private int mStarsWidth = 0;//星星的宽度
+    private int mStarsHeight = ViewGroup.LayoutParams.WRAP_CONTENT;//星星的高度
+    private int mStarsWidth = ViewGroup.LayoutParams.WRAP_CONTENT;//星星的宽度
     private int mPaddingLeft = 0;//左
     private int mPaddingTop = 0;//上
     private int mPaddingRight = 0;//右
